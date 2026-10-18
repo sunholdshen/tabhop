@@ -1,4 +1,4 @@
-# TabHop 0.2.0-beta.1 使用说明
+# 键随心 0.2.0-beta.2（原 TabHop） 使用说明
 
 免费、闭源的 Windows 应用快捷键工具。支持 Windows 10 22H2 / Windows 11，x64 和 ARM64。
 
@@ -12,9 +12,11 @@
 
 1. 点“新增规则”。
 2. 填写应用进程文件名，例如 notepad.exe；也可点“选择程序”选择 EXE，只保存其文件名。
-3. 在“原快捷键”选择普通按键和修饰键。例如只选 F2。
-4. 在“替换为”选择目标按键。例如勾选 Ctrl，再选 S。
+3. 点击“原快捷键”的录入区域，按下 F2 并松开，自动识别。
+4. 点击“替换为”的录入区域，按下 Ctrl+S 并松开，自动识别。
 5. 点“保存”，关闭设置窗口。在记事本内按 F2 应触发保存。
+
+录入时按键不会触发对话框的保存、取消或焦点跳转。按错可点“取消录入”，保留原值；切换到其他窗口也会取消。系统安全组合键无法保证拦截，不要用 Ctrl+Alt+Delete 或 Win+L 测试。
 
 支持单个普通按键，或一个普通按键加最多两个 Ctrl / Alt / Shift / Win 修饰键。例：F2、Ctrl+K、Ctrl+Shift+S。不是任意三个普通字母同时按下，也不包含连续宏、鼠标或多步骤动作。
 当前支持字母、主键盘数字、F1–F24、方向键、常用编辑/导航键和标点键；不包含小键盘、媒体键、纯修饰键和锁定键。标点按键名称以标准键盘标记显示，具体输出受当前键盘布局影响。
@@ -46,4 +48,4 @@ EXE 版：`%LOCALAPPDATA%\TabHop\rules.json`。
 
 ## 下载与商店版状态
 
-当前请从 [GitHub Releases](https://github.com/sunholdshen/tabhop/releases/tag/v0.2.0-beta.1) 下载 EXE 测试版。此版本尚未签名，可能显示未知发布者。Microsoft Store 版本尚未上架。
+当前从 [GitHub Releases](https://github.com/sunholdshen/tabhop/releases/tag/v0.2.0-beta.2) 下载 EXE 测试版。尚未签名，可能显示未知发布者。Microsoft Store 版本尚未上架。
