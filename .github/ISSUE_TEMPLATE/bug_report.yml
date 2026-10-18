@@ -1,0 +1,29 @@
+name: 问题反馈
+description: 报告安装、启动或快捷键问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: 请勿提交密码、令牌或敏感浏览内容。
+  - type: input
+    id: environment
+    attributes:
+      label: 系统与版本
+      description: Windows 版本、x64/ARM64、TabHop 版本、Chrome/Edge 版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+  - type: textarea
+    id: other
+    attributes:
+      label: 补充信息
+      description: 是否有其他改键工具、浏览器是否以管理员权限运行
